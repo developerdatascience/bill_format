@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --bill-color: #ffffff;
+    --black-dark-color: black;
+    --light-grey: rgb(205, 196, 196);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.bill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+    background-color: var(--bill-color);
+    max-width: 550px;
+
+}
+
+.bill .header {
+    line-height: 1px;
+}
+
+.header h5 {
+    text-align: center;
+}
+
+.header .company {
+    text-align: center;
+}
+
+.header .address {
+    font-size: 12px;
+    text-align: center;
+    padding: 2px;
+}
+
+.header .row-divider {
+    width: 450px;
+    border: 1px solid var(--black-dark-color); 
+}
+
+
+table {
+    width: 500px;
+    border-collapse: collapse; /* Removes extra spacing between table cells */
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    font-size: 0.7em;
+}
+
+th {
+    background-color: #f1f1f1; /* Subtle background for table headers */
+    color: #333; /* Darker text for headers */
+    font-weight: bold;
+}
+
+td {
+    color: #555; /* Slightly muted text for better readability */
+}
+
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Alternating row color */
+}
+
+
+.bill-divider{
+    width: 450px;
+    border: 1px solid var(--light-grey); 
+}
+
+.calc-label {
+    margin-left: 20px;
+}
+
+.calc-no {
+    margin-left: 80px;
+}
+
+
+
+.disc-qty-calc {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+/* .final-calc {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.final-calc .invoice-calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .final-calc .net-amt {
+    padding: 10px 0px 20px 0px;
+} */
+
+.net-amt .net-amt-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    margin: 20px 0px 10px 0px;
+}
+
+.footer .footer-divider {
+    width: 450px;
+    height: 1px;
+    border: 1px solid var(--light-grey); 
+}
+
+.footer .greet {
+    font-size: 15px;
+    color: var(--black-dark-color);
+    text-align: center;
+}
+
+.footer .visit-greet {
+    font-size: 12px;
+    color: var(--black-dark-color);
+    text-align: center;
+}
+
+.amount-format {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 0.5px;
+    width: 60px;
+}

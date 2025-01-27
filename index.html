@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="bill">
+            <div class="header">
+                <h5>Sales Invoice</h5>
+                <h4 class="row-divider"></h4>
+                <h3 class="company">The Burger Company 🍔</h3>
+                <h4 class="row-divider"></h4>
+                <p class="address">Bhalolpur, Tarighat, Ghazipur (UP), 232332</p>
+                <p class="address">Ph. 0544-45637299</p>
+                <p class="address">Email: support@theburgercompany.com</p>
+                <p class="address">GSTIN: 2ABHU870EP457</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Sr</th>
+                    <th>Item Name</th>
+                    <th>Qty</th>
+                    <th>Discount</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Oreo Biscuits</td>
+                    <td>2</td>
+                    <td>5%</td>
+                    <td>140</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Amul Milk</td>
+                    <td>1</td>
+                    <td>5%</td>
+                    <td>80</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Maggi</td>
+                    <td>1</td>
+                    <td>5%</td>
+                    <td>120</td>
+                    <td>120</td>
+                </tr>
+            </table>
+            <div class="bill-calc">
+                <div class="qty-calc">
+                    <h4 class="bill-divider"></h4>
+                    <span class="total-qty-header calc-label">Total Qty</span>
+                    <span class="total-qty-no calc-no">3</span>
+                </div>
+                <div class="disc-qty-calc">
+                    <span class="disc-qty-header calc-label">Item Discount Inclusive</span>
+                    <div class="amount-format">
+                        <p class="rupee">Rs.</p>
+                        <p class="disc-qty-value">60</p>
+                    </div>
+                </div>
+                <div class="final-calc">
+                    <h4 class="bill-divider"></h4>
+                    <div class="gross-amt invoice-calc">
+                        <span class="gross-amt-header">Gross amount after discount</span>
+                        <div class="amount-format">
+                            <p class="rupee">Rs.</p>
+                            <p class="gross-value currency">360</p>
+                        </div>
+                    </div>
+                    <div class="disc-amt invoice-calc">
+                        <span class="disc-amt-header">Bill discount amt@5%</span>
+                        <div class="amount-format">
+                            <p class="rupee">Rs.</p>
+                            <p class="disc-value currency">50</p>
+                        </div>
+                    </div>
+                    <div class="net-amt invoice-calc">
+                        <span class="net-amt-header">Net Amount</span>
+                        <div class="amount-format">
+                            <p class="rupee">Rs.</p>
+                            <p class="net-value currency">310</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-divider"></div>
+                <p class="greet">Have a Nice Day</p>
+                <p class="visit-greet">Thank you for your kind visit</p>
+            </div>
+    </div>
+</body>
+</html>
